@@ -11,18 +11,18 @@ angular.module('demoapp', ['ngMdIcons'])
     .controller('democtrl', ['$scope', function($scope) {
         var icons = [
             //
-            //Material Icons
+            //材料的图标
             //
             'amazon', 'apple', 'facebook-box', 'facebook-messenger', 'facebook', 'github-box', 'github-circle', 'google-plus-box', 'google-plus', 'hangouts', 'linkedin-box', 'linkedin', 'login', 'logout', 'office', 'twitter', 'whatsapp', 'windows',
 
             //
-            //Custom Icons
+            //自定义图标
             //
             'signal_wifi_0_bar', 'signal_wifi_1_bar', 'signal_wifi_2_bar', 'signal_wifi_3_bar', 'signal_cellular_connected_no_internet_0_bar', 'signal_cellular_connected_no_internet_1_bar', 'signal_cellular_connected_no_internet_2_bar', 'signal_cellular_connected_no_internet_3_bar', 'signal_cellular_0_bar', 'signal_cellular_1_bar', 'signal_cellular_2_bar', 'signal_cellular_3_bar', 'now_wallpaper', 'now_widgets', 'battery_20', 'battery_30', 'battery_50', 'battery_60', 'battery_80', 'battery_90', 'battery_alert', 'battery_charging_20', 'battery_charging_30', 'battery_charging_50', 'battery_charging_60', 'battery_charging_80', 'battery_charging_90', 'account_child',
 
 
             //
-            //Google Material Icons
+            //谷歌材料的图标
             //
 
             //action
@@ -34,13 +34,13 @@ angular.module('demoapp', ['ngMdIcons'])
             //av
             'add_to_queue','airplay','album','art_track','av_timer','branding_watermark','call_to_action','closed_caption','equalizer','explicit','fast_forward','fast_rewind','featured_play_list','featured_video','fibre_dvr','fiber_manual_record','fibre_new','fibre_pin','fibre_smart_record','forward_10','forward_30','forward_5','games','hd','hearing','high_quality','my_library_add','my_library_books','my_library_music','loop','mic','mic_none','mic_off','movie','music_video','new_releases','not_interested','note','pause','pause_circle_filled','pause_circle_outline','play_arrow','play_circle_fill','play_circle_outline','playlist_add','playlist_add_check','playlist_play','queue','queue_music','queue_play_next','radio','recent_actors','remove_from_queue','repeat','repeat_one','replay','replay_10','replay_30','replay_5','shuffle','skip_next','skip_previous','slow_motion_video','snooze','sort_by_alpha','stop','subscriptions','subtitles','surround_sound','video_call','video_label','video_library','videocam','videocam_off','volume_down','volume_mute','volume_off','volume_up','web','web_asset',
 
-            //communication
+            //通信
             'business', 'call', 'call_end', 'call_made', 'call_merge', 'call_missed', 'call_missed_outgoing', 'call_received', 'call_split', 'chat', 'chat_bubble', 'chat_bubble_outline', 'clear_all', 'comment', 'contact_mail', 'contact_phone', 'contacts', 'dialer_sip', 'dialpad', 'email', 'forum', 'import_contacts', 'import_export', 'invert_colors_off', 'live_help', 'location_off', 'location_on', 'mail_outline', 'message', 'no_sim', 'phone', 'phonelink_erase', 'phonelink_lock', 'phonelink_ring', 'phonelink_setup', 'portable_wifi_off', 'present_to_all', 'ring_volume', 'rss_feed', 'screen_share', 'stay_current_landscape', 'stay_current_portrait', 'stay_primary_landscape', 'stay_primary_portrait', 'stop_screen_share', 'swap_calls', 'textsms', 'voicemail', 'vpn_key',
 
-            //content
+            //内容
             'add', 'add_box', 'add_circle', 'add_circle_outline', 'archive', 'backspace', 'block', 'clear', 'content_copy', 'content_cut', 'content_paste', 'create', 'delete_sweep', 'drafts', 'filter_list', 'flag', 'font_download', 'forward', 'gesture', 'inbox', 'link', 'low_priority', 'mail', 'markunread', 'move_to_inbox', 'next_week', 'redo', 'remove', 'remove_circle', 'remove_circle_outline', 'reply', 'reply_all', 'report', 'save', 'select_all', 'send', 'sort', 'text_format', 'unarchive', 'undo', 'weekend',
 
-            //device
+            //设备
             'access_alarms', 'access_alarm', 'access_time', 'add_alarm', 'airplanemode_on', 'airplanemode_inactive', 'battery_charging_full', 'battery_full', 'battery_std', 'battery_unknown', 'bluetooth', 'bluetooth_connected', 'bluetooth_disabled', 'bluetooth_searching', 'brightness_auto', 'brightness_high', 'brightness_low', 'brightness_medium', 'data_usage', 'developer_mode', 'devices', 'dvr', 'gps_fixed', 'gps_not_fixed', 'gps_off', 'graphic_eq', 'location_disabled', 'location_searching', 'network_cell', 'network_wifi', 'nfc', 'screen_lock_landscape', 'screen_lock_portrait', 'screen_lock_rotation', 'screen_rotation', 'sd_storage', 'settings_system_daydream', 'signal_cellular_4_bar', 'signal_cellular_connected_no_internet_4_bar', 'signal_cellular_no_sim', 'signal_cellular_null', 'signal_cellular_off', 'signal_wifi_4_bar', 'signal_wifi_4_bar_lock', 'signal_wifi_off', 'storage', 'usb', 'wallpaper', 'wifi_lock', 'wifi_tethering',
 
             //editor
@@ -106,11 +106,11 @@ angular.module('demoapp', ['ngMdIcons'])
     }])
     .config(['ngMdIconServiceProvider', function(ngMdIconServiceProvider) {
         ngMdIconServiceProvider
-            // Add single icon
+            // 添加单个图标
             .addShape('standby', '<path d="M13 3.5h-2v10h2v-10z"/><path d="M16.56 5.94l-1.45 1.45C16.84 8.44 18 10.33 18 12.5c0 3.31-2.69 6-6 6s-6-2.69-6-6c0-2.17 1.16-4.06 2.88-5.12L7.44 5.94C5.36 7.38 4 9.78 4 12.5c0 4.42 3.58 8 8 8s8-3.58 8-8c0-2.72-1.36-5.12-3.44-6.56z"/>')
-            // Get an existing icon
+            // 获取一个现有的图标
             .addShape('custom-delete', ngMdIconServiceProvider.getShape('delete'))
-            // Add multiple icons
+            //添加多个图标
             .addShapes({
                 'marker': '<path d="M18.632 8.21A6.632 6.632 0 0 1 12 14.843a6.632 6.632 0 0 1-6.632-6.63A6.632 6.632 0 0 1 12 1.578a6.632 6.632 0 0 1 6.632 6.63zM12 0C7.465 0 3.79 3.676 3.79 8.21c0 3.755 2.52 6.917 5.96 7.895L12 24l2.25-7.895c3.44-.978 5.96-4.14 5.96-7.894C20.21 3.677 16.536 0 12 0z">',
                 'live_circle': '<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 9.094h1.188v4.844h2.53v.968H4V9.094zm4.5 0h1.188v5.812H8.5V9.094zm1.78 0h1.345l1.28 4.375 1.345-4.377h1.313l-2 5.812h-1.25l-2.033-5.81zm5.845 0H20v.97l-2.688-.002v1.376h2.282v.937h-2.282v1.563H20v.968h-3.875V9.094z"/>'

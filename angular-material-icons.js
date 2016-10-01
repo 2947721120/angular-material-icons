@@ -18,10 +18,10 @@ angular.module('ngMdIcons', [])
                 var icon, size, viewBox;
 
                 var render = function() {
-                    // icon
+                    // 图标
                     if (attr.icon !== undefined) {
                         icon = attr.icon;
-                        // Check for material-design-icons style name, and extract icon / size
+                        // 检查材料设计风格的图标名称和图标提取/尺寸
                         var ss = icon.match(/ic_(.*)_([0-9]+)px.svg/m);
                         if (ss !== null) {
                             icon = ss[1];
@@ -30,7 +30,7 @@ angular.module('ngMdIcons', [])
                     } else {
                         icon = 'help';
                     }
-                    // validate
+                    // 验证
                     if (shapes[icon] === undefined) {
                         icon = 'help';
                     }
@@ -43,7 +43,7 @@ angular.module('ngMdIcons', [])
                         size = 24;
                     }
 
-                    // viewBox
+                    // 视框
                     if (attr.viewBox !== undefined) {
                         viewBox = attr.viewBox;
                     }
@@ -51,25 +51,25 @@ angular.module('ngMdIcons', [])
                         viewBox = ngMdIconService.getViewBox(icon) ? ngMdIconService.getViewBox(icon) : '0 0 24 24';
                     }
 
-                    // render
+                    //给予
                     element.html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="' + viewBox + '" width="' + size + '" height="' + size + '">' + shapes[icon] + '</svg>');
                 };
 
                 var replace = function(newicon) {
-                    // validate
+                    // 验证
                     if (shapes[newicon] === undefined) {
                         newicon = 'help';
                     }
                     if (newicon === icon) { return; }
-                    // render new and old icons (old icon will be shown by default)
+                    // 使新老图标（图标旧默认情况下会显示）
                     element.html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="' + size + '" height="' + size + '"><g id="' + newicon + '" style="display:none">' + shapes[newicon] + '</g><g id="' + icon + '" style="display:none">' + shapes[icon] + '</g></svg>');
-                    // morph
+                    // 变形
                     var options = JSON.parse(attr.options || null);
                     try {
-                        // this block will succeed if SVGMorpheus is available
+                        // 此块会成功，如果SVG睡眠可用
                         new SVGMorpheus(element.children()[0]).to(newicon, options);
                     } catch (error) {
-                        // fallback
+                        // 倒退
                         element.html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="' + size + '" height="' + size + '">' + shapes[newicon] + '</svg>');
                     }
                     icon = newicon;
@@ -82,10 +82,10 @@ angular.module('ngMdIcons', [])
                     size = newsize;
                 };
 
-                // render the first time
+                // 呈现在第一时间
                 render();
 
-                // watch for any changes
+                //观看任何改变
                 if (attr.icon !== undefined) { attr.$observe('icon', replace); }
                 if (attr.size !== undefined) { attr.$observe('size', resize);  }
             }
@@ -133,25 +133,25 @@ angular.module('ngMdIcons', [])
         function addShape(name, shape) {
             shapes[name] = shape;
 
-            return provider; // chainable function
+            return provider; // 可链接功能
         }
 
         function addShapes(newShapes) {
             shapes = angular.extend(shapes, newShapes);
 
-            return provider; // chainable function
+            return provider; // 可链接功能
         }
 
         function addViewBox(name, viewBox) {
             viewBoxes[name] = viewBox;
 
-            return provider; // chainable function
+            return provider; // 可链接功能
         }
 
         function addViewBoxes(newViewBoxes) {
             viewBoxes = angular.extend(viewBoxes, newViewBoxes);
 
-            return provider; // chainable function
+            return provider; // 可链接功能
         }
 
         function getShape(name) {
@@ -173,7 +173,7 @@ angular.module('ngMdIcons', [])
         function includedShapes() {
             return {
                 /*
-                 * Material Design Icons
+                 *材料设计图标
                  * (http://materialdesignicons.com)
                  */
                 'amazon': '<path d="M13.23 10.56V10c-1.94 0-3.99.39-3.99 2.67 0 1.16.61 1.95 1.63 1.95.76 0 1.43-.47 1.86-1.22.52-.93.5-1.8.5-2.84m2.7 6.53c-.18.16-.43.17-.63.06-.89-.74-1.05-1.08-1.54-1.79-1.47 1.5-2.51 1.95-4.42 1.95-2.25 0-4.01-1.39-4.01-4.17 0-2.18 1.17-3.64 2.86-4.38 1.46-.64 3.49-.76 5.04-.93V7.5c0-.66.05-1.41-.33-1.96-.32-.49-.95-.7-1.5-.7-1.02 0-1.93.53-2.15 1.61-.05.24-.25.48-.47.49l-2.6-.28c-.22-.05-.46-.22-.4-.56.6-3.15 3.45-4.1 6-4.1 1.3 0 3 .35 4.03 1.33C17.11 4.55 17 6.18 17 7.95v4.17c0 1.25.5 1.81 1 2.48.17.25.21.54 0 .71l-2.06 1.78h-.01"/><path d="M20.16 19.54C18 21.14 14.82 22 12.1 22c-3.81 0-7.25-1.41-9.85-3.76-.2-.18-.02-.43.25-.29 2.78 1.63 6.25 2.61 9.83 2.61 2.41 0 5.07-.5 7.51-1.53.37-.16.66.24.32.51"/><path d="M21.07 18.5c-.28-.36-1.85-.17-2.57-.08-.19.02-.22-.16-.03-.3 1.24-.88 3.29-.62 3.53-.33.24.3-.07 2.35-1.24 3.32-.18.16-.35.07-.26-.11.26-.67.85-2.14.57-2.5z"/>',
@@ -197,7 +197,7 @@ angular.module('ngMdIcons', [])
 
 
                 /*
-                 * custom icons
+                 * 自定义图标
                  */
                 'signal_wifi_0_bar': '<path fill-opacity=".3" d="M12.01 21.49L23.64 7c-.45-.34-4.93-4-11.64-4C5.28 3 .81 6.66.36 7l11.63 14.49.01.01.01-.01z"/>',
                 'signal_wifi_1_bar': '<path fill-opacity=".3" d="M12.01 21.49L23.64 7c-.45-.34-4.93-4-11.64-4C5.28 3 .81 6.66.36 7l11.63 14.49.01.01.01-.01z"/><path d="M6.67 14.86L12 21.49v.01l.01-.01 5.33-6.63C17.06 14.65 15.03 13 12 13s-5.06 1.65-5.33 1.86z"/>',
@@ -230,7 +230,7 @@ angular.module('ngMdIcons', [])
 
 
                 /*
-                 * Google Material Design Icons
+                 * 材料设计图标
                  * (https://www.google.com/design/icons)
                  */
                 //

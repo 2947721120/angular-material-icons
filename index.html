@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular Material Icons</title>
+    <title>Angular 材料的图标</title>
     <script src="https://ajax.c2cmalls.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
     <script src="angular-material-icons.js"></script>
     <script src="https://cdnjs.c2cbc.com/ajax/libs/SVG-Morpheus/0.1.8/svg-morpheus.js"></script>
@@ -71,10 +71,10 @@
 
 <body ng-app="demoapp" ng-controller="democtrl" ng-strict-di>
 
-    <!-- GitHub ribbon -->
-    <a href="https://github.com/klarsys/angular-material-icons"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+    <!-- GitHub的 -->
+    <a href="https://github.com/klarsys/angular-material-icons"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="餐桌上的我 GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
-    <h1>Angular Material Icons v0.7.1</h1>
+    <h1>角料图标 v0.7.1</h1>
    AngularJS指令使用材料设计图标自定义填充颜色和大小。
     <ul>
         <li>生产，使用缩小版直接从 CDN:
@@ -82,13 +82,13 @@
             <br><code>&lt;script src="//cdnjs.c2cbc.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"&gt;&lt;/script&gt;</code>
             <br>
             <br>
-            为其他目的，项目文件可通过 <a href="#" ng-click="command='bower install angular-material-icons';">bower</a> / <a href="#" ng-click="command='npm install angular-material-icons';">npm</a> or can be cloned directly from <a href="#" ng-click="command='git clone https://github.com/klarsys/angular-material-icons.git';">github</a>.
+            为其他目的，项目文件可通过 <a href="#" ng-click="command='bower install angular-material-icons';">bower</a> / <a href="#" ng-click="command='npm install angular-material-icons';">npm</a>或者可以直接从被克隆 <a href="#" ng-click="command='git clone https://github.com/klarsys/angular-material-icons.git';">github</a>.
             <br><code>{{command}}</code>
         </li>
-        <li>Inject <code>ngMdIcons</code> to your angularjs application:
+        <li>注入<code>ngMdIcons</code>你的AngularJS应用:
             <br><code>angular.module('demoapp', ['ngMdIcons']);</code>
         </li>
-        <li>Use <code>ng-md-icon</code> directive in your html, specifying fill-color through css:
+        <li>使用 <code>ng-md-icon</code>在你的HTML指令，指定填充颜色通过CSS:
             <br><code>&lt;ng-md-icon icon="..." style="fill: ..." size="..."&gt;&lt;/ng-md-icon&gt;</code>
             <br>
             <br>
@@ -98,40 +98,40 @@
             <div><ng-md-icon icon="send" style="fill: #abcdef"></ng-md-icon><br>icon="send"<br>style="fill: #abcdef"</div>
             <br>
             <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="20"></ng-md-icon><br>size="20"</div>
-            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}"></ng-md-icon><br>-- no size --<br>(default is 24)</div>
+            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}"></ng-md-icon><br>-- 没有大小 --<br>(默认值是 24)</div>
             <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="{{size}}"></ng-md-icon><br>size="{{size}}"</div>
             <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="64"></ng-md-icon><br>size="64"</div>
             <br>
         </li>
-        <li>本指令测试Chrome，Firefox，Safari和边缘。
-            <br>For IE, use <code>ng-attr-style</code> instead of <code>style</code>. Also refer AngularJS documentation on <a href="https://docs.angularjs.org/guide/ie" target="_blank">IE Compatibility</a>.
+        <li>本指令测试谷歌(360极速 等谷歌内核)，火狐，Safari 浏览器。
+            <br>对于IE浏览器，使用 <code>ng-attr-style</code> 代替 <code>style</code>.同样在参考文献AngularJS <a href="https://docs.angularjs.org/guide/ie" target="_blank">IE浏览器的兼容性</a>.
         </li>
-        <li>Optional: Include <a href="https://github.com/alexk111/SVG-Morpheus" target="_blank">SVG-Morpheus</a> in your project and changes to <code>icon</code> attribute that you do through your controller will go through delightful morphing as seen above.
-            <br>Refer code for this page (index.html and demo.js) for details.
-            <br><code>&lt;script src="//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.1.8/svg-morpheus.js"&gt;&lt;/script&gt;</code>
+        <li>可选：包括 <a href="https://github.com/alexk111/SVG-Morpheus" target="_blank">SVG睡眠</a> 在您的项目和变化 图标(<code>icon</code>) 属性，你可以通过你的控制器做会经过愉快的变形由上可见.
+            <br>请参阅代码此页面（index.html，然后demo.js）了解详细信息.
+            <br><code>&lt;script src="//cdnjs.c2cbc.com/ajax/libs/SVG-Morpheus/0.1.8/svg-morpheus.js"&gt;&lt;/script&gt;</code>
             <br>
-            <br>When SVG-Morpheus is included, you can use <code>options</code> attribute to control <a href="https://github.com/alexk111/SVG-Morpheus#options" target="_blank">morphing options</a>.
+            <br>当包括SVG-睡眠(SVG-Morpheus)，你可以使用 <code>options</code>属性来控制 <a href="https://github.com/alexk111/SVG-Morpheus#options" target="_blank">变形选项</a>.
             <br>
             <br>
-            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon><br>options=<br>'{"duration": 375}'<br>(default is 750)</div>
-            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"rotation": "none"}'></ng-md-icon><br>options=<br>'{"rotation": "none"}'<br>(default is clock)</div>
-            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"rotation": "counterclock"}'></ng-md-icon><br>options=<br>'{"rotation": "counterclock"}'</div>
-            <div><ng-md-icon icon="{{clickIcon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375, "rotation": "none"}' ng-click="clickIconMorph()"></ng-md-icon><br>Example:<br>Morph on ng-click</div>
+            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375}'></ng-md-icon><br>(选项=)options=<br>'{"duration": 375}'<br>(default is 750)</div>
+            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"rotation": "none"}'></ng-md-icon><br>(选项=)options=<br>'{"rotation": "none"}'<br>(default is clock)</div>
+            <div><ng-md-icon icon="{{icon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"rotation": "counterclock"}'></ng-md-icon><br>选项=<br>'{"rotation": "counterclock"}'</div>
+            <div><ng-md-icon icon="{{clickIcon}}" ng-attr-style="fill: {{fill}}" size="48" options='{"duration": 375, "rotation": "none"}' ng-click="clickIconMorph()"></ng-md-icon><br>点击变形例:<br>变形的NG-点击</div>
             <br>
-            <br>Note that <code>options</code> attribute is a JSON parse-able string so surround keys with double-quotes.
+            <br>注意<code>options</code> 属性是一个JSON语法分析字符串，所以用双引号.
         </li>
-        <li>Advanced: Refer <a href="https://github.com/klarsys/angular-material-icons/blob/master/demo.js" target="_blank">demo.js</a> to register custom icons for your project or to access default icon shapes from a controller or another service.
+        <li>高级：请参考<a href="https://github.com/klarsys/angular-material-icons/blob/master/demo.js" target="_blank">demo.js</a>注册自定义图标为您的投影机从一个控制器或其他服务访问默认图标的形状。
             <br>
-            <div><ng-md-icon icon="standby" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>standby</div>
-            <div><ng-md-icon icon="custom-delete" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>custom-delete</div>
-            <div><ng-md-icon icon="marker" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>marker</div>
-            <div><ng-md-icon icon="live_circle" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>live_circle</div>
+            <div><ng-md-icon icon="standby" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>支持standby</div>
+            <div><ng-md-icon icon="custom-delete" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>(定制删除)ustom-delete</div>
+            <div><ng-md-icon icon="marker" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>标记(marker)</div>
+            <div><ng-md-icon icon="live_circle" ng-attr-style="fill: {{fill}}" size="48"></ng-md-icon><br>(圈子直播)live_circle</div>
         </li>
     </ul>
 
-    <h1>Full list of icons:</h1>
+    <h1>图标全部列表:</h1>
 
-    <h2>From <a href="http://materialdesignicons.com" target="_blank">MaterialDesignIcons.com</a></h2>
+    <h2>从 <a href="http://materialdesignicons.com" target="_blank">MaterialDesignIcons.com</a></h2>
     <div><ng-md-icon icon="amazon" size="48"></ng-md-icon><br>amazon</div>
     <div><ng-md-icon icon="apple" size="48"></ng-md-icon><br>apple</div>
     <div><ng-md-icon icon="facebook-box" size="48"></ng-md-icon><br>facebook-box</div>
@@ -181,8 +181,8 @@
     <div><ng-md-icon icon="battery_charging_90" size="48"></ng-md-icon><br>battery_charging_90</div>
     <div><ng-md-icon icon="account_child" size="48"></ng-md-icon><br>account_child</div>
 
-    <h2>From <a href="https://github.com/google/material-design-icons" target="_blank">Material Design icons by Google</a></h2>
-    <h2>Action</h2>
+    <h2>从 <a href="https://github.com/google/material-design-icons" target="_blank">由谷歌材料设计图标</a></h2>
+    <h2>行动</h2>
     <div><ng-md-icon icon="3d_rotation" size="48"></ng-md-icon><br>3d_rotation</div>
     <div><ng-md-icon icon="accessibility" size="48"></ng-md-icon><br>accessibility</div>
     <div><ng-md-icon icon="accessible" size="48"></ng-md-icon><br>accessible</div>
@@ -400,7 +400,7 @@
     <div><ng-md-icon icon="zoom_in" size="48"></ng-md-icon><br>zoom_in</div>
     <div><ng-md-icon icon="zoom_out" size="48"></ng-md-icon><br>zoom_out</div>
 
-    <h2>Alert</h2>
+    <h2>警报</h2>
     <div><ng-md-icon icon="add_alert" size="48"></ng-md-icon><br>add_alert</div>
     <div><ng-md-icon icon="error" size="48"></ng-md-icon><br>error</div>
     <div><ng-md-icon icon="error_outline" size="48"></ng-md-icon><br>error_outline</div>
@@ -488,7 +488,7 @@
     <div><ng-md-icon icon="web" size="48"></ng-md-icon><br>web</div>
     <div><ng-md-icon icon="web_asset" size="48"></ng-md-icon><br>web_asset</div>
 
-    <h2>Cummunikation</h2>
+    <h2>通讯</h2>
     <div><ng-md-icon icon="business" size="48"></ng-md-icon><br>business</div>
     <div><ng-md-icon icon="call" size="48"></ng-md-icon><br>call</div>
     <div><ng-md-icon icon="call_end" size="48"></ng-md-icon><br>call_end</div>
@@ -539,7 +539,7 @@
     <div><ng-md-icon icon="voicemail" size="48"></ng-md-icon><br>voicemail</div>
     <div><ng-md-icon icon="vpn_key" size="48"></ng-md-icon><br>vpn_key</div>
 
-    <h2>Content</h2>
+    <h2>内容</h2>
     <div><ng-md-icon icon="add" size="48"></ng-md-icon><br>add</div>
     <div><ng-md-icon icon="add_box" size="48"></ng-md-icon><br>add_box</div>
     <div><ng-md-icon icon="add_circle" size="48"></ng-md-icon><br>add_circle</div>
@@ -582,7 +582,7 @@
     <div><ng-md-icon icon="undo" size="48"></ng-md-icon><br>undo</div>
     <div><ng-md-icon icon="weekend" size="48"></ng-md-icon><br>weekend</div>
 
-    <h2>Device</h2>
+    <h2>设备</h2>
     <div><ng-md-icon icon="access_alarms" size="48"></ng-md-icon><br>access_alarms</div>
     <div><ng-md-icon icon="access_alarm" size="48"></ng-md-icon><br>access_alarm</div>
     <div><ng-md-icon icon="access_time" size="48"></ng-md-icon><br>access_time</div>
@@ -634,7 +634,7 @@
     <div><ng-md-icon icon="wifi_lock" size="48"></ng-md-icon><br>wifi_lock</div>
     <div><ng-md-icon icon="wifi_tethering" size="48"></ng-md-icon><br>wifi_tethering</div>
 
-    <h2>Editor</h2>
+    <h2>编辑</h2>
     <div><ng-md-icon icon="attach_file" size="48"></ng-md-icon><br>attach_file</div>
     <div><ng-md-icon icon="attach_money" size="48"></ng-md-icon><br>attach_money</div>
     <div><ng-md-icon icon="border_all" size="48"></ng-md-icon><br>border_all</div>
@@ -704,7 +704,7 @@
     <div><ng-md-icon icon="vertical_align_top" size="48"></ng-md-icon><br>vertical_align_top</div>
     <div><ng-md-icon icon="wrap_text" size="48"></ng-md-icon><br>wrap_text</div>
 
-    <h2>File</h2>
+    <h2>文件</h2>
     <div><ng-md-icon icon="attachment" size="48"></ng-md-icon><br>attachment</div>
     <div><ng-md-icon icon="cloud" size="48"></ng-md-icon><br>cloud</div>
     <div><ng-md-icon icon="cloud_circle" size="48"></ng-md-icon><br>cloud_circle</div>
@@ -720,7 +720,7 @@
     <div><ng-md-icon icon="folder_open" size="48"></ng-md-icon><br>folder_open</div>
     <div><ng-md-icon icon="folder_shared" size="48"></ng-md-icon><br>folder_shared</div>
 
-    <h2>Hardware</h2>
+    <h2>硬件</h2>
     <div><ng-md-icon icon="cast" size="48"></ng-md-icon><br>cast</div>
     <div><ng-md-icon icon="cast_connected" size="48"></ng-md-icon><br>cast_connected</div>
     <div><ng-md-icon icon="computer" size="48"></ng-md-icon><br>computer</div>
@@ -770,7 +770,7 @@
     <div><ng-md-icon icon="vidiogame_asset" size="48"></ng-md-icon><br>vidiogame_asset</div>
     <div><ng-md-icon icon="watch" size="48"></ng-md-icon><br>watch</div>
 
-    <h2>Image</h2>
+    <h2>图片</h2>
     <div><ng-md-icon icon="add_a_photo" size="48"></ng-md-icon><br>add_a_photo</div>
     <div><ng-md-icon icon="add_to_photos" size="48"></ng-md-icon><br>add_to_photos</div>
     <div><ng-md-icon icon="adjust" size="48"></ng-md-icon><br>adjust</div>
@@ -926,7 +926,7 @@
     <div><ng-md-icon icon="wb_irradescent" size="48"></ng-md-icon><br>wb_irradescent</div>
     <div><ng-md-icon icon="wb_sunny" size="48"></ng-md-icon><br>wb_sunny</div>
 
-    <h2>Maps</h2>
+    <h2>地图</h2>
     <div><ng-md-icon icon="add_location" size="48"></ng-md-icon><br>add_location</div>
     <div><ng-md-icon icon="beenhere" size="48"></ng-md-icon><br>beenhere</div>
     <div><ng-md-icon icon="directions" size="48"></ng-md-icon><br>directions</div>
@@ -996,7 +996,7 @@
     <div><ng-md-icon icon="transfer_within_a_station" size="48"></ng-md-icon><br>transfer_within_a_station</div>
     <div><ng-md-icon icon="zoom_out_map" size="48"></ng-md-icon><br>zoom_out_map</div>
 
-    <h2>Navigation</h2>
+    <h2>导航</h2>
     <div><ng-md-icon icon="apps" size="48"></ng-md-icon><br>apps</div>
     <div><ng-md-icon icon="arrow_back" size="48"></ng-md-icon><br>arrow_back</div>
     <div><ng-md-icon icon="arrow_downward" size="48"></ng-md-icon><br>arrow_downward</div>
@@ -1076,7 +1076,7 @@
     <div><ng-md-icon icon="wc" size="48"></ng-md-icon><br>wc</div>
     <div><ng-md-icon icon="wifi" size="48"></ng-md-icon><br>wifi</div>
 
-    <h2>Places</h2>
+    <h2>地方</h2>
     <div><ng-md-icon icon="ac_unit" size="48"></ng-md-icon><br>ac_unit</div>
     <div><ng-md-icon icon="airport_shuttle" size="48"></ng-md-icon><br>airport_shuttle</div>
     <div><ng-md-icon icon="all_inclusive" size="48"></ng-md-icon><br>all_inclusive</div>
@@ -1097,7 +1097,7 @@
     <div><ng-md-icon icon="smoke_rooms" size="48"></ng-md-icon><br>smoke_rooms</div>
     <div><ng-md-icon icon="spa" size="48"></ng-md-icon><br>spa</div>
 
-    <h2>Social</h2>
+    <h2>社会</h2>
     <div><ng-md-icon icon="cake" size="48"></ng-md-icon><br>cake</div>
     <div><ng-md-icon icon="domain" size="48"></ng-md-icon><br>domain</div>
     <div><ng-md-icon icon="group" size="48"></ng-md-icon><br>group</div>
@@ -1129,7 +1129,7 @@
     <div><ng-md-icon icon="share" size="48"></ng-md-icon><br>share</div>
     <div><ng-md-icon icon="whatshot" size="48"></ng-md-icon><br>whatshot</div>
 
-    <h2>Toggle</h2>
+    <h2>切换</h2>
     <div><ng-md-icon icon="check_box" size="48"></ng-md-icon><br>check_box</div>
     <div><ng-md-icon icon="check_box_outline_blank" size="48"></ng-md-icon><br>check_box_outline_blank</div>
     <div><ng-md-icon icon="indeterminate_check_box" size="48"></ng-md-icon><br>indeterminate_check_box</div>
